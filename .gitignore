@@ -1,0 +1,49 @@
+# --- secretos ---
+.env
+.env.*
+!.env.example
+*.pem
+
+# --- deps ---
+node_modules/
+.pnpm-store/
+
+# --- builds ---
+dist/
+build/
+out/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# --- tests ---
+coverage/
+
+# --- caches / tooling ---
+.cache/
+.turbo/
+.vercel/
+.vite/
+.eslintcache
+
+# --- logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# --- editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- runtime local de LiveKit ---
+livekit-server
+*.db
+
+# --- scratch ---
+tmp/
+scratch/
+*.local

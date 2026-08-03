@@ -1,0 +1,10 @@
+# Config del livekit-server para que EMITA webhooks al endpoint del Hito 4.
+# `livekit-server --dev` pelado no envía webhooks: hay que declarar el bloque `webhook`.
+# Correr con: livekit-server --config livekit/hito4/config.yaml
+port: 7880
+keys:
+  devkey: secret
+webhook:
+  api_key: devkey
+  urls:
+    - http://localhost:3002/webhook
